@@ -12,11 +12,6 @@
 			"version": "14"
 		},
 		{
-			"name": "Desktop-Safari-10",
-			"browserName": "safari",
-			"version": "10"
-		},
-		{
 			"name": "Desktop-MAC-Chrome-56",
 			"browserName": "chrome",
 			"platform": "Mac 10.12",
