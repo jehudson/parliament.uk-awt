@@ -11,4 +11,4 @@ pipelines:
       - build:
           tasks:
             - exec:
-                command: npm
+                command: make
