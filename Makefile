@@ -2,8 +2,9 @@
 
 # Environment variables
 # Ensure hypertext protocol is specified (http:// or https://) on url
-DOMAIN?=http://example.com
-
+DOMAIN?=https://beta.parliament.uk
+SAUCE_USERNAME=$SAUCE_USERNAME
+SAUCE_ACCESS_KEY=$SAUCE_ACCESS_KEY
 
 # Node modules variables
 ESLINT=./node_modules/.bin/eslint
