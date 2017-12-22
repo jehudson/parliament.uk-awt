@@ -4,7 +4,7 @@ environments:
       - beta-parliament-functional-tests
 pipelines:
   beta-parliament-functional-tests
-    group: Testing
+    group: testing
     label_template: "${COUNT}"
     materials: parliament.uk-awt
       git: https://github.com/jehudson/parliament.uk-awt.git
