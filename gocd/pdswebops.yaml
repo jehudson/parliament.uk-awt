@@ -6,7 +6,8 @@ pipelines:
   beta-parliament-functional-tests:
     group: testing
     label_template: "${COUNT}"
-    materials: parliament.uk-awt
+    materials:
+      parliament.uk-awt:
       git: https://github.com/jehudson/parliament.uk-awt.git
       branch: WEBDEV-398
       auto_update: true
