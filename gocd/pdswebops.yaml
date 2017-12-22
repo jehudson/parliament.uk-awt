@@ -20,8 +20,6 @@ pipelines:
                     command: npm
                     arguments:
                       - "i"
-            make:
-              tasks:
                 - exec:
                     command: make
                     arguments:
