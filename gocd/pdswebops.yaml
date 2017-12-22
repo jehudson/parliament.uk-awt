@@ -16,7 +16,7 @@ pipelines:
           jobs:
             npm:
               tasks:
-              - exec:
-                command: npm
-                arguments:
-                  - "i"
+                - exec:
+                  command: npm
+                  arguments:
+                    - "i"
