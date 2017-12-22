@@ -10,13 +10,13 @@ pipelines:
       git: https://github.com/jehudson/parliament.uk-awt.git
       branch: WEBDEV-398
       auto_update: true
-    stages:
-      - build:
-          clean_workspace: true
-          jobs:
-            npm:
-              - exec:
-                  run_if: passed
-                  command: npm
-                  arguments:
-                    - i
+  stages:
+    - build:
+        clean_workspace: true
+        jobs:
+          npm:
+            - exec:
+                run_if: passed
+                command: npm
+                arguments:
+                  - i
