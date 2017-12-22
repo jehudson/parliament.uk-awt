@@ -1,7 +1,3 @@
-environments:
-  Web.DEVCI:
-    pipelines:
-      - beta-parliament-functional-tests
 pipelines:
   beta-parliament-functional-tests:
     group: testing
@@ -11,4 +7,3 @@ pipelines:
       git: https://github.com/jehudson/parliament.uk-awt.git
       branch: WEBDEV-398
       auto_update: true
-    
