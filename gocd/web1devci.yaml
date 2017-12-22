@@ -1,0 +1,27 @@
+environments:
+  Web.DEVCI:
+    pipelines:
+      - saucelab-automated-tests
+pipelines:
+  saucelab-automated-tests:
+    group: Testing
+    label_template: "${COUNT}"
+    materials:
+      mygit:
+        git: https://github.com/jehudson/parliament.uk-awt.git
+        branch: WEBDEV-398
+    stages:
+      - build:
+          clean_workspace: true
+          jobs:
+            npm:
+              tasks:
+                - exec:
+                    command: npm
+                    arguments:
+                      - "i"
+                - exec:
+                    command: sh
+                    arguments:
+                      - "-c"
+                      - "make SAUCE_USERNAME=$SAUCE_USERNAME SAUCE_ACCESS_KEY=$SAUCE_ACCESS_KEY test"
