@@ -20,4 +20,4 @@ pipelines:
                     run_if: passed
                     command: npm
                     arguments:
-                      - i
+                      - "i"
