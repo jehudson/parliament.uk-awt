@@ -15,8 +15,9 @@ pipelines:
       - build:
           jobs:
             npm:
-              - exec:
-                  run_if: passed
-                  command: npm
-                  arguments:
-                    - i
+              tasks:
+                - exec:
+                    run_if: passed
+                    command: npm
+                    arguments:
+                      - i
