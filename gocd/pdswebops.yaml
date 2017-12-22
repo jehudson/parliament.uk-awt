@@ -7,3 +7,8 @@ pipelines:
       git: https://github.com/jehudson/parliament.uk-awt.git
       branch: WEBDEV-398
       auto_update: true
+    stages:
+      - build:
+          tasks:
+            - exec:
+                command: npm
