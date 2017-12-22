@@ -1,10 +1,10 @@
 environments:
   Web.DEVCI:
     pipelines:
-      - beta-parliament-awt
+      - saucelab-automated-tests
 pipelines:
-  beta-parliament-awt:
-    group: testing
+  saucelab-automated-tests:
+    group: Testing
     label_template: "${COUNT}"
     materials:
       mygit:
