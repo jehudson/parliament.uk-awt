@@ -23,4 +23,5 @@ pipelines:
                 - exec:
                     command: sh
                     arguments:
+                      - "-c"
                       - "make SAUCE_USERNAME=$SAUCE_USERNAME SAUCE_ACCESS_KEY=$SAUCE_ACCESS_KEY test"
